@@ -56,13 +56,13 @@ with st.sidebar:
 
   
 # Título principal do app
-st.title("Ajuda Insetos🪲🪲")
+st.title("Ajuda Imunes AI Coder")
 
 # Subtítulo adicional
-st.title("Ajudar os burrinhos🫏🫏🫏🫏")
+st.title("Assistente Pessoal de Programação Python 🐍")
 
 # Texto auxiliar abaixo do título
-st.caption("Ajudar você")
+st.caption("Faça sua pergunta sobre a Linguagem Python e obtenha código, explicações e referências.")
 
 # Inicializa o histórico de mensagens na sessão, caso ainda não exista
 if "messages" not in st.session_state:
@@ -92,7 +92,7 @@ if groq_api_key:
 
 # Caso não tenha chave, mas já existam mensagens, mostra aviso
 elif st.session_state.messages:
-     st.warning("namoral, insira sua API Key da Groq na barra lateral para continuar.")
+     st.warning("Por favor, insira sua API Key da Groq na barra lateral para continuar.")
 
 # Captura a entrada do usuário no chat
 if prompt := st.chat_input("Qual sua dúvida sobre Python?"):
